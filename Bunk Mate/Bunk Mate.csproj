@@ -80,9 +80,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs" />
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="BunkMateMainPage.cs">
       <SubType>Form</SubType>
@@ -111,8 +113,8 @@
       <DependentUpon>Subject.cs</DependentUpon>
     </Compile>
     <Compile Include="UniversalValues.cs" />
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BunkMateMainPage.resx">
       <DependentUpon>BunkMateMainPage.cs</DependentUpon>
@@ -155,18 +157,9 @@
       <Link>phantomjs.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\Selenium.WebDriver.ChromeDriver.2.21.0.0\driver\chromedriver.exe">
-      <Link>chromedriver.exe</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="icon.ico" />
-    <Content Include="phantomjs-license.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RequestsForC#\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="MSXML2">
       <Guid>{F5078F18-C551-11D3-89B9-0000F81FE221}</Guid>

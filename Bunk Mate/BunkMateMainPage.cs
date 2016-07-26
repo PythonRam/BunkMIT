@@ -476,7 +476,7 @@ namespace Bunk_Mate
 
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            About ab = new About();
+            AboutBox ab = new AboutBox();
             ab.ShowIcon = true;
             ab.ShowDialog();
 
